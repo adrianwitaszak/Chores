@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>847870674406-3i2tdbelaact0uqm64558mj61l1vdp7g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.847870674406-3i2tdbelaact0uqm64558mj61l1vdp7g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAN-JR8DfjOOfxyt6QMoyiUl49hZYh6x8U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>847870674406</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.adrianwitaszak.Chores</string>
+	<key>PROJECT_ID</key>
+	<string>chores-760c8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chores-760c8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:847870674406:ios:a3dd5f8e64ef6c4e364227</string>
+</dict>
+</plist>
