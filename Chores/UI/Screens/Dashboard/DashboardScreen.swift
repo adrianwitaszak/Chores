@@ -52,10 +52,10 @@ struct DashboardScreen: View {
                     VStack(spacing: 15) {
                         ForEach(viewModel.todosFiltered, id: \.id) { todo in
                             if searchText == "" {
-                                TodoView(todo: Task(ownerId: todo.ownerId, title: todo.title, description: todo.description, isCompleted: todo.isCompleted, documentID: todo.documentID), viewModel: viewModel)
+                                TodoView(todo: todo, viewModel: viewModel)
                             } else {
                                 if todo.title.lowercased().contains(searchText.lowercased()) || todo.description.lowercased().contains(searchText.lowercased()) {
-                                    TodoView(todo: Task(ownerId: todo.ownerId, title: todo.title, description: todo.description, isCompleted: todo.isCompleted, documentID: todo.documentID), viewModel: viewModel)
+                                    TodoView(todo: todo, viewModel: viewModel)
                                 }
                             }
                         }

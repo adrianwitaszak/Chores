@@ -33,7 +33,7 @@ struct CreateTodoView: View {
             
             HStack {
                 Button {
-                    viewModel.uploadTodo(todo: Task(ownerId: user.id ?? "", title: title, description: description, isCompleted: false))
+                    viewModel.uploadTodo(todo: Task(creatorId: user.id ?? "", title: title, description: description))
                     viewModel.showCreateTodoView = false
                 } label: {
                     DoTodoButton(text: "Create", backgroundColor: Color("lightBlue"))

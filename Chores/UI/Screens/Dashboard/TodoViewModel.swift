@@ -27,8 +27,11 @@ class TodoViewModel: ObservableObject {
         let query = COLLECTION_USERS.document(user.id ?? "").collection(Constants.Firebase.collectionTodos).order(by: "isCompleted", descending: false)
         query.getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
-            
-            self.todos = documents.compactMap { try? $0.data(as: Task.self) }
+            print("TodoViewModel: data \(documents)")
+
+            let tasks: [Task] = documents.compactMap({ Task(from: $0.data()) })
+            self.todos = tasks
+            print("TodoViewModel: loadTodos \(tasks)")
 
             for index in stride(from: 0, to: self.todos.count, by: 1) {
                 self.todos[index].documentID = documents[index].documentID

@@ -71,6 +71,6 @@ struct TodoView: View {
 
 struct TodoView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoView(todo: Task.dummy1, viewModel: TodoViewModel())
+        TodoView(todo: dummyTask, viewModel: TodoViewModel())
     }
 }
