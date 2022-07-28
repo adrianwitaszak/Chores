@@ -40,12 +40,12 @@
 		3CE4C7B22892CF7D00823F84 /* TodoButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7B12892CF7D00823F84 /* TodoButtonStack.swift */; };
 		3CE4C7B42892CF9900823F84 /* TodoTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7B32892CF9900823F84 /* TodoTextfield.swift */; };
 		3CE4C7B62892CFAE00823F84 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7B52892CFAE00823F84 /* TodoView.swift */; };
-		3CE4C7B92892D05700823F84 /* FirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7B82892D05700823F84 /* FirebaseDatasource.swift */; };
-		3CE4C7BC2892D06C00823F84 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7BB2892D06C00823F84 /* AppUser.swift */; };
-		3CE4C7BE2892D08900823F84 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7BD2892D08900823F84 /* Todo.swift */; };
-		3CE4C7C02892D09F00823F84 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7BF2892D09F00823F84 /* Constants.swift */; };
 		3CE4C7C32892D0C000823F84 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7C22892D0C000823F84 /* View+Modifiers.swift */; };
 		3CE4C7C52892D10700823F84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CE4C7C42892D10700823F84 /* GoogleService-Info.plist */; };
+		4BF5C6FEE5B4C3EEB85EB4E4 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C1C5A565DB95225BC12B /* AppUser.swift */; };
+		4BF5C94145BAC59DF06E2542 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C3044673EA8D2A6619D2 /* Todo.swift */; };
+		4BF5CDC39161BCE92F2BC91C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C16D7DAB33D1E5CCE8BB /* Constants.swift */; };
+		4BF5CEBDB516838342494657 /* FirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C068985D0A7C711C816E /* FirebaseDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,12 +93,12 @@
 		3CE4C7B12892CF7D00823F84 /* TodoButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoButtonStack.swift; sourceTree = "<group>"; };
 		3CE4C7B32892CF9900823F84 /* TodoTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTextfield.swift; sourceTree = "<group>"; };
 		3CE4C7B52892CFAE00823F84 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
-		3CE4C7B82892D05700823F84 /* FirebaseDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatasource.swift; sourceTree = "<group>"; };
-		3CE4C7BB2892D06C00823F84 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
-		3CE4C7BD2892D08900823F84 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
-		3CE4C7BF2892D09F00823F84 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CE4C7C22892D0C000823F84 /* View+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifiers.swift"; sourceTree = "<group>"; };
 		3CE4C7C42892D10700823F84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BF5C068985D0A7C711C816E /* FirebaseDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDatasource.swift; sourceTree = "<group>"; };
+		4BF5C16D7DAB33D1E5CCE8BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4BF5C1C5A565DB95225BC12B /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		4BF5C3044673EA8D2A6619D2 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +135,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CDD72D62892EE4000C5A75D /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				4BF5C16D7DAB33D1E5CCE8BB /* Constants.swift */,
+				4BF5C068985D0A7C711C816E /* FirebaseDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		3CDD72D72892EE8700C5A75D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BF5C1C5A565DB95225BC12B /* AppUser.swift */,
+				4BF5C3044673EA8D2A6619D2 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CDD72D82892EECE00C5A75D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3CDD72DA2892EEED00C5A75D /* Screens */,
+				3CE4C7542892CCDA00823F84 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3CDD72DA2892EEED00C5A75D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3CDD72DD2892EF2D00C5A75D /* Dashboard */,
+				3CDD72DC2892EF2300C5A75D /* Login */,
+				3CDD72DB2892EF0100C5A75D /* Components */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3CDD72DB2892EF0100C5A75D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3CE4C79D2892CE6000823F84 /* AddTodoLogo.swift */,
+				3CE4C79F2892CE8000823F84 /* BackgroundGradientView.swift */,
+				3CE4C7A12892CE9B00823F84 /* BlankView.swift */,
+				3CE4C7A32892CEB500823F84 /* CreateTodoView.swift */,
+				3CE4C7A52892CECC00823F84 /* CustomButton.swift */,
+				3CE4C7A72892CEE600823F84 /* CustomPlainButton.swift */,
+				3CE4C7A92892CF0300823F84 /* CustomTextEditor.swift */,
+				3CE4C7AB2892CF2E00823F84 /* CustomTextField.swift */,
+				3CE4C7AD2892CF4100823F84 /* LogoView.swift */,
+				3CE4C7AF2892CF5B00823F84 /* SearchBarView.swift */,
+				3CE4C7B12892CF7D00823F84 /* TodoButtonStack.swift */,
+				3CE4C7B32892CF9900823F84 /* TodoTextfield.swift */,
+				3CE4C7B52892CFAE00823F84 /* TodoView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3CDD72DC2892EF2300C5A75D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3CE4C7962892CDD800823F84 /* LoginScreen.swift */,
+				3CE4C7982892CE0900823F84 /* AuthViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3CDD72DD2892EF2D00C5A75D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				3CE4C7942892CDAF00823F84 /* DashboardScreen.swift */,
+				3CE4C79A2892CE2B00823F84 /* TodoViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		3CE4C7462892CCDA00823F84 = {
 			isa = PBXGroup;
 			children = (
@@ -159,10 +234,10 @@
 		3CE4C7512892CCDA00823F84 /* Chores */ = {
 			isa = PBXGroup;
 			children = (
+				3CDD72D82892EECE00C5A75D /* UI */,
+				3CDD72D72892EE8700C5A75D /* Model */,
+				3CDD72D62892EE4000C5A75D /* Datasource */,
 				3CE4C7C12892D0B200823F84 /* Extensions */,
-				3CE4C7BA2892D06400823F84 /* Model */,
-				3CE4C7B72892D04900823F84 /* Datasource */,
-				3CE4C7902892CD5000823F84 /* UI */,
 				3CE4C78F2892CD4300823F84 /* Assets */,
 				3CE4C7522892CCDA00823F84 /* ChoresApp.swift */,
 			);
@@ -201,81 +276,6 @@
 				3CE4C7582892CCDB00823F84 /* Preview Content */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		3CE4C7902892CD5000823F84 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				3CE4C7912892CD8C00823F84 /* Screens */,
-				3CE4C7542892CCDA00823F84 /* ContentView.swift */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		3CE4C7912892CD8C00823F84 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				3CE4C79C2892CE4100823F84 /* Components */,
-				3CE4C7932892CD9D00823F84 /* Login */,
-				3CE4C7922892CD9500823F84 /* Dashboard */,
-			);
-			name = Screens;
-			sourceTree = "<group>";
-		};
-		3CE4C7922892CD9500823F84 /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				3CE4C7942892CDAF00823F84 /* DashboardScreen.swift */,
-				3CE4C79A2892CE2B00823F84 /* TodoViewModel.swift */,
-			);
-			name = Dashboard;
-			sourceTree = "<group>";
-		};
-		3CE4C7932892CD9D00823F84 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				3CE4C7962892CDD800823F84 /* LoginScreen.swift */,
-				3CE4C7982892CE0900823F84 /* AuthViewModel.swift */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		3CE4C79C2892CE4100823F84 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				3CE4C79D2892CE6000823F84 /* AddTodoLogo.swift */,
-				3CE4C79F2892CE8000823F84 /* BackgroundGradientView.swift */,
-				3CE4C7A12892CE9B00823F84 /* BlankView.swift */,
-				3CE4C7A32892CEB500823F84 /* CreateTodoView.swift */,
-				3CE4C7A52892CECC00823F84 /* CustomButton.swift */,
-				3CE4C7A72892CEE600823F84 /* CustomPlainButton.swift */,
-				3CE4C7A92892CF0300823F84 /* CustomTextEditor.swift */,
-				3CE4C7AB2892CF2E00823F84 /* CustomTextField.swift */,
-				3CE4C7AD2892CF4100823F84 /* LogoView.swift */,
-				3CE4C7AF2892CF5B00823F84 /* SearchBarView.swift */,
-				3CE4C7B12892CF7D00823F84 /* TodoButtonStack.swift */,
-				3CE4C7B32892CF9900823F84 /* TodoTextfield.swift */,
-				3CE4C7B52892CFAE00823F84 /* TodoView.swift */,
-			);
-			name = Components;
-			sourceTree = "<group>";
-		};
-		3CE4C7B72892D04900823F84 /* Datasource */ = {
-			isa = PBXGroup;
-			children = (
-				3CE4C7B82892D05700823F84 /* FirebaseDatasource.swift */,
-				3CE4C7BF2892D09F00823F84 /* Constants.swift */,
-			);
-			name = Datasource;
-			sourceTree = "<group>";
-		};
-		3CE4C7BA2892D06400823F84 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3CE4C7BB2892D06C00823F84 /* AppUser.swift */,
-				3CE4C7BD2892D08900823F84 /* Todo.swift */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		3CE4C7C12892D0B200823F84 /* Extensions */ = {
@@ -360,8 +360,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					3CE4C74E2892CCDA00823F84 = {
 						CreatedOnToolsVersion = 14.0;
@@ -437,24 +439,24 @@
 				3CE4C7992892CE0900823F84 /* AuthViewModel.swift in Sources */,
 				3CE4C7B62892CFAE00823F84 /* TodoView.swift in Sources */,
 				3CE4C7B02892CF5B00823F84 /* SearchBarView.swift in Sources */,
-				3CE4C7C02892D09F00823F84 /* Constants.swift in Sources */,
 				3CE4C7C32892D0C000823F84 /* View+Modifiers.swift in Sources */,
 				3CE4C7B42892CF9900823F84 /* TodoTextfield.swift in Sources */,
-				3CE4C7BC2892D06C00823F84 /* AppUser.swift in Sources */,
 				3CE4C7552892CCDA00823F84 /* ContentView.swift in Sources */,
 				3CE4C7A22892CE9B00823F84 /* BlankView.swift in Sources */,
 				3CE4C7A82892CEE600823F84 /* CustomPlainButton.swift in Sources */,
-				3CE4C7BE2892D08900823F84 /* Todo.swift in Sources */,
 				3CE4C79E2892CE6000823F84 /* AddTodoLogo.swift in Sources */,
 				3CE4C7972892CDD800823F84 /* LoginScreen.swift in Sources */,
 				3CE4C7A62892CECC00823F84 /* CustomButton.swift in Sources */,
 				3CE4C7B22892CF7D00823F84 /* TodoButtonStack.swift in Sources */,
 				3CE4C7AE2892CF4100823F84 /* LogoView.swift in Sources */,
-				3CE4C7B92892D05700823F84 /* FirebaseDatasource.swift in Sources */,
 				3CE4C7532892CCDA00823F84 /* ChoresApp.swift in Sources */,
 				3CE4C7A42892CEB500823F84 /* CreateTodoView.swift in Sources */,
 				3CE4C7AA2892CF0300823F84 /* CustomTextEditor.swift in Sources */,
 				3CE4C7952892CDAF00823F84 /* DashboardScreen.swift in Sources */,
+				4BF5CDC39161BCE92F2BC91C /* Constants.swift in Sources */,
+				4BF5CEBDB516838342494657 /* FirebaseDatasource.swift in Sources */,
+				4BF5C6FEE5B4C3EEB85EB4E4 /* AppUser.swift in Sources */,
+				4BF5C94145BAC59DF06E2542 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
