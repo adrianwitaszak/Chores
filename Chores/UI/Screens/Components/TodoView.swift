@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TodoView: View {
     
-    var todo: Todo
+    var todo: Task
     
     @ObservedObject var viewModel: TodoViewModel
     
@@ -71,6 +71,6 @@ struct TodoView: View {
 
 struct TodoView_Previews: PreviewProvider {
     static var previews: some View {
-        TodoView(todo: Todo.dummy1, viewModel: TodoViewModel())
+        TodoView(todo: Task.dummy1, viewModel: TodoViewModel())
     }
 }

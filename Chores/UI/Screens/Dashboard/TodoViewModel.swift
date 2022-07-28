@@ -9,9 +9,9 @@ import Firebase
 import Foundation
 
 class TodoViewModel: ObservableObject {
-    @Published var todos = [Todo]()
+    @Published var todos = [Task]()
     @Published var showCreateTodoView: Bool = false
-    @Published var todosFiltered = [Todo]()
+    @Published var todosFiltered = [Task]()
     
     var currentUser: AppUser? {
         return AuthViewModel.shared.currentUser
@@ -28,7 +28,7 @@ class TodoViewModel: ObservableObject {
         query.getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             
-            self.todos = documents.compactMap { try? $0.data(as: Todo.self) }
+            self.todos = documents.compactMap { try? $0.data(as: Task.self) }
 
             for index in stride(from: 0, to: self.todos.count, by: 1) {
                 self.todos[index].documentID = documents[index].documentID
@@ -38,15 +38,10 @@ class TodoViewModel: ObservableObject {
         }
     }
     
-    func uploadTodo(todo: Todo) {
+    func uploadTodo(todo: Task) {
         guard let user = currentUser else { return }
-        
-        let data: [String: Any] = [
-            "ownerId": user.id ?? "",
-            "title": todo.title,
-            "description": todo.description,
-            "isCompleted": todo.isCompleted
-        ]
+
+        let data: [String: Any] = todo.toDocument(userId: user.id ?? "")
         
         COLLECTION_USERS.document(user.id ?? "").collection(Constants.Firebase.collectionTodos).addDocument(data: data) { error in
             if let error = error {

@@ -42,8 +42,9 @@
 		3CE4C7B62892CFAE00823F84 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7B52892CFAE00823F84 /* TodoView.swift */; };
 		3CE4C7C32892D0C000823F84 /* View+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4C7C22892D0C000823F84 /* View+Modifiers.swift */; };
 		3CE4C7C52892D10700823F84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CE4C7C42892D10700823F84 /* GoogleService-Info.plist */; };
+		4BF5C1A84B3B7BE46698E73F /* FirebaseConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C8362D812B99CD2CB8E6 /* FirebaseConvertible.swift */; };
 		4BF5C6FEE5B4C3EEB85EB4E4 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C1C5A565DB95225BC12B /* AppUser.swift */; };
-		4BF5C94145BAC59DF06E2542 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C3044673EA8D2A6619D2 /* Todo.swift */; };
+		4BF5C94145BAC59DF06E2542 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C3044673EA8D2A6619D2 /* Task.swift */; };
 		4BF5CDC39161BCE92F2BC91C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C16D7DAB33D1E5CCE8BB /* Constants.swift */; };
 		4BF5CEBDB516838342494657 /* FirebaseDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF5C068985D0A7C711C816E /* FirebaseDatasource.swift */; };
 /* End PBXBuildFile section */
@@ -98,7 +99,8 @@
 		4BF5C068985D0A7C711C816E /* FirebaseDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDatasource.swift; sourceTree = "<group>"; };
 		4BF5C16D7DAB33D1E5CCE8BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4BF5C1C5A565DB95225BC12B /* AppUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
-		4BF5C3044673EA8D2A6619D2 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		4BF5C3044673EA8D2A6619D2 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		4BF5C8362D812B99CD2CB8E6 /* FirebaseConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				4BF5C1C5A565DB95225BC12B /* AppUser.swift */,
-				4BF5C3044673EA8D2A6619D2 /* Todo.swift */,
+				4BF5C3044673EA8D2A6619D2 /* Task.swift */,
+				4BF5C8362D812B99CD2CB8E6 /* FirebaseConvertible.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,7 +459,8 @@
 				4BF5CDC39161BCE92F2BC91C /* Constants.swift in Sources */,
 				4BF5CEBDB516838342494657 /* FirebaseDatasource.swift in Sources */,
 				4BF5C6FEE5B4C3EEB85EB4E4 /* AppUser.swift in Sources */,
-				4BF5C94145BAC59DF06E2542 /* Todo.swift in Sources */,
+				4BF5C94145BAC59DF06E2542 /* Task.swift in Sources */,
+				4BF5C1A84B3B7BE46698E73F /* FirebaseConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

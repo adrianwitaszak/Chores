@@ -10,7 +10,7 @@ import Foundation
 
 class FirebaseDatasource {
 
-    func getTodos(userId: String, completion: @escaping ([Todo]) -> Void) {
+    func getTodos(userId: String, completion: @escaping ([Task]) -> Void) {
         let query = COLLECTION_USERS.document(userId).collection(Constants.Firebase.collectionTodos).order(by: "isCompleted", descending: false)
         query.getDocuments { snapshot, error in
             if let error = error {
@@ -18,7 +18,7 @@ class FirebaseDatasource {
             }
             guard let documents = snapshot?.documents else { return }
 
-            var todos = documents.compactMap { try? $0.data(as: Todo.self) }
+            var todos = documents.compactMap { try? $0.data(as: Task.self) }
 
             for index in stride(from: 0, to: todos.count, by: 1) {
                 todos[index].documentID = documents[index].documentID
@@ -28,7 +28,7 @@ class FirebaseDatasource {
         }
     }
 
-    func uploadTodo(userId: String, todo: Todo) {
+    func uploadTodo(userId: String, todo: Task) {
 
         let data: [String: Any] = [
             "ownerId": userId,

@@ -50,13 +50,8 @@ class AuthViewModel: ObservableObject {
             }
             
             guard let user = result?.user else { return }
-            
-            let data = [
-                "uid": user.uid,
-                "firstName": "",
-                "lastName": "",
-                "email": email
-            ]
+
+            let data = user.toDocument(userId: user.uid)
             
             COLLECTION_USERS.document(user.uid).setData(data) { _ in
                 print("AuthViewModel: Successfully uploaded data")

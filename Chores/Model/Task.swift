@@ -8,7 +8,7 @@
 import FirebaseFirestoreSwift
 import Foundation
 
-struct Todo: Identifiable, Decodable, Equatable {
+struct Task: Identifiable, Decodable, Equatable {
     @DocumentID var id: String? = UUID().uuidString
     let ownerId: String
     var title: String
@@ -17,7 +17,18 @@ struct Todo: Identifiable, Decodable, Equatable {
     var documentID: String? = ""
 
     static var dummy1 = Self(id: "1", ownerId: "1", title: "Get milk", description: "Get it ASAP", isCompleted: false)
-    static var dummy2 = Self(id: "2", ownerId: "1", title: "Get cucumber", description: "Get it ASAP",isCompleted: false)
+    static var dummy2 = Self(id: "2", ownerId: "1", title: "Get cucumber", description: "Get it ASAP", isCompleted: false)
     static var dummy3 = Self(id: "3", ownerId: "1", title: "Get ham", description: "Get it ASAP", isCompleted: false)
     static var dummy4 = Self(id: "4", ownerId: "1", title: "Get bread", description: "Get it ASAP", isCompleted: false)
+}
+
+extension Task: FirebaseConvertable {
+    func toDocument(userId: String) -> [String: Any] {
+        [
+            "ownerId": ownerId,
+            "title": title,
+            "description": description,
+            "isCompleted": isCompleted
+        ]
+    }
 }
