@@ -209,6 +209,7 @@
 			children = (
 				3CE4C7942892CDAF00823F84 /* DashboardScreen.swift */,
 				3CE4C79A2892CE2B00823F84 /* TodoViewModel.swift */,
+				4BF5CFB2C549B1093A3D3032 /* Components */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -287,6 +288,13 @@
 				3CE4C7C22892D0C000823F84 /* View+Modifiers.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4BF5CFB2C549B1093A3D3032 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

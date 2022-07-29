@@ -22,6 +22,10 @@ struct CreateTodoView: View {
         VStack {
             TodoTextField(text: $title, placeholder: "Todo...")
                 .padding([.horizontal, .bottom])
+            TextField("Description", text: $description)
+                .padding([.horizontal, .bottom])
+            TodoTextField(text: $title, placeholder: "Todo...")
+                    .padding([.horizontal, .bottom])
             
             CustomTextEditor(
                 text: $description,
